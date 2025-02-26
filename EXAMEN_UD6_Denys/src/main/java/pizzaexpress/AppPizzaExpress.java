@@ -36,8 +36,6 @@ public class AppPizzaExpress {
                 pedido.anyadirPizza(eleccion);
                 pedido.obtenerDetalles();
                 cliente.obtenerDetalles();
-            } else {
-                System.out.println("Esa pizza no la tenemos disponible todavía...");
             }
         }
 
