@@ -1,6 +1,7 @@
 package pizzaexpress;
 
 public class Empleado extends PizzaExpress implements AccionesPedido{
+    private static String EMPLEADO_PREFIJO = "EMP";
     private static int contadorEmpleado = 0;
 
     private String idEmpleado;
@@ -13,7 +14,7 @@ public class Empleado extends PizzaExpress implements AccionesPedido{
 
     private void generarId(){
         contadorEmpleado++;
-        this.idEmpleado = "EMP" + Integer.toString(contadorEmpleado);
+        this.idEmpleado = EMPLEADO_PREFIJO + Integer.toString(contadorEmpleado);
     }
 
     public void siguienteEstado(Pedido pedido){

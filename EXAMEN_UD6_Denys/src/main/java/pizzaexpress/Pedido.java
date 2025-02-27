@@ -27,7 +27,9 @@ public class Pedido extends PizzaExpress {
         this.estadoPedido = estadoPedido;
     }
 
-    public void aplicarDescuento(){}
+    public void aplicarDescuento(){
+
+    }
 
     public Cliente getCliente() {
         return cliente;
